@@ -1,0 +1,43 @@
+from pptx import Presentation
+from pptx.util import Inches
+
+# 创建演示文稿对象
+presentation = Presentation()
+
+# 添加标题幻灯片
+title_slide_layout = presentation.slide_layouts[0]
+slide = presentation.slides.add_slide(title_slide_layout)
+title = slide.shapes.title
+subtitle = slide.placeholders[1]
+title.text = "省钱计划"
+subtitle.text = "为有负债的家庭量身定制"
+
+# 添加内容幻灯片
+bullet_slide_layout = presentation.slide_layouts[1]
+slide = presentation.slides.add_slide(bullet_slide_layout)
+title = slide.shapes.title
+body = slide.shapes.placeholders[1]
+title.text = "评估与规划"
+
+# 写入文本框内容
+tf = body.text_frame
+tf.text = '1. 评估收入与支出' 
+tf.add_paragraph().text = '- 列出所有收入来源'
+tf.add_paragraph().text = '- 记录每月开销'
+
+# 添加更多内容幻灯片
+slide = presentation.slides.add_slide(bullet_slide_layout)
+title = slide.shapes.title
+body = slide.shapes.placeholders[1]
+title.text = "行动步骤"
+tf = body.text_frame
+tf.text = '2. 建立预算' 
+tf.add_paragraph().text = '3. 减少不必要开支'
+tf.add_paragraph().text = '4. 优先处理债务'
+tf.add_paragraph().text = '5. 增加额外收入'
+tf.add_paragraph().text = '6. 教育投资'
+tf.add_paragraph().text = '7. 长期规划'
+tf.add_paragraph().text = '8. 定期审查进度'
+
+# 保存演示文稿
+presentation.save('省钱计划.pptx')
