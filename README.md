@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 English | [中文](README_zh.md)
 
 [![GitHub stars](https://img.shields.io/github/stars/mannaandpoem/OpenManus?style=social)](https://github.com/gregpr07/browser-use/stargazers) &ensp;
@@ -162,3 +163,6 @@ Thanks to [anthropic-computer-use](https://github.com/anthropics/anthropic-quick
 and [browser-use](https://github.com/browser-use/browser-use) for providing basic support for this project!
 
 OpenManus is built by contributors from MetaGPT. Huge thanks to this agent community!
+=======
+# open-manus-web
+>>>>>>> a157c65b7d48fc205af69b531952f5c84cfb97cc

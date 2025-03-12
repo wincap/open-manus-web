@@ -38,7 +38,6 @@ def list_files(folder_path):
 folder_path = '/data/OpenManus/code/'  # 替换为你的文件夹路径
  
 
-
 def get_multiple_files():
     global folder_path
     folder_path = Path(folder_path)
