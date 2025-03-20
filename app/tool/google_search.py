@@ -1,7 +1,8 @@
 import asyncio
 from typing import List
 
-from googlesearch import search
+#from googlesearch import search
+from .bocha_search import search
 
 from app.tool.base import BaseTool
 

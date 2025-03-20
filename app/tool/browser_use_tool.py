@@ -103,7 +103,7 @@ class BrowserUseTool(BaseTool):
     async def _ensure_browser_initialized(self) -> BrowserContext:
         """Ensure browser and context are initialized."""
         if self.browser is None:
-            self.browser = BrowserUseBrowser(BrowserConfig(headless=False))
+            self.browser = BrowserUseBrowser(BrowserConfig(headless=True))
         if self.context is None:
             self.context = await self.browser.new_context()
             self.dom_service = DomService(await self.context.get_current_page())
