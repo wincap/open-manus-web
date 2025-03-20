@@ -1,164 +1,139 @@
-English | [中文](README_zh.md)
-
-[![GitHub stars](https://img.shields.io/github/stars/mannaandpoem/OpenManus?style=social)](https://github.com/gregpr07/browser-use/stargazers) &ensp;
-[![Twitter Follow](https://img.shields.io/twitter/follow/openmanus?style=social)](https://twitter.com/openmanus) &ensp;
-[![Discord Follow](https://dcbadge.vercel.app/api/server/https://discord.gg/6dn7Sa3a?style=flat)](https://discord.gg/6dn7Sa3a) &ensp;
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  中文
 
 # 👋 OpenManus
 
-Manus is incredible, but OpenManus can achieve any idea without an *Invite Code* 🛫!
+Manus 非常棒，但 OpenManus 无需邀请码即可实现任何创意 🛫！
+使用这个之前需要开通博查key
+https://open.bochaai.com/api-keys
 
-Our team
-members [@mannaandpoem](https://github.com/mannaandpoem) [@XiangJinyu](https://github.com/XiangJinyu) [@MoshiQAQ](https://github.com/MoshiQAQ) [@didiforgithub](https://github.com/didiforgithub) [@stellaHSR](https://github.com/stellaHSR)
-and [@Xinyu Zhang](https://x.com/xinyzng), we are from [@MetaGPT](https://github.com/geekan/MetaGPT) etc. The prototype
-is launched within 3 hours and we are keeping building!
+把google搜索替换成博查 国内可以用 
+在服务器上需要吧浏览器模式headless模式=True打开
 
-It's a simple implementation, so we welcome any suggestions, contributions, and feedback!
+ 
 
-Enjoy your own agent with OpenManus!
 
-We're also excited to introduce [OpenManus-RL](https://github.com/OpenManus/OpenManus-RL), an open-source project dedicated to reinforcement learning (RL)- based (such as GRPO) tuning methods for LLM agents, developed collaboratively by researchers from UIUC and OpenManus.
-
-## Project Demo
+## 项目演示
 
 <video src="https://private-user-images.githubusercontent.com/61239030/420168772-6dcfd0d2-9142-45d9-b74e-d10aa75073c6.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDEzMTgwNTksIm5iZiI6MTc0MTMxNzc1OSwicGF0aCI6Ii82MTIzOTAzMC80MjAxNjg3NzItNmRjZmQwZDItOTE0Mi00NWQ5LWI3NGUtZDEwYWE3NTA3M2M2Lm1wND9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAzMDclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMzA3VDAzMjIzOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTdiZjFkNjlmYWNjMmEzOTliM2Y3M2VlYjgyNDRlZDJmOWE3NWZhZjE1MzhiZWY4YmQ3NjdkNTYwYTU5ZDA2MzYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.UuHQCgWYkh0OQq9qsUWqGsUbhG3i9jcZDAMeHjLt5T4" data-canonical-src="https://private-user-images.githubusercontent.com/61239030/420168772-6dcfd0d2-9142-45d9-b74e-d10aa75073c6.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDEzMTgwNTksIm5iZiI6MTc0MTMxNzc1OSwicGF0aCI6Ii82MTIzOTAzMC80MjAxNjg3NzItNmRjZmQwZDItOTE0Mi00NWQ5LWI3NGUtZDEwYWE3NTA3M2M2Lm1wND9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAzMDclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMzA3VDAzMjIzOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTdiZjFkNjlmYWNjMmEzOTliM2Y3M2VlYjgyNDRlZDJmOWE3NWZhZjE1MzhiZWY4YmQ3NjdkNTYwYTU5ZDA2MzYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.UuHQCgWYkh0OQq9qsUWqGsUbhG3i9jcZDAMeHjLt5T4" controls="controls" muted="muted" class="d-block rounded-bottom-2 border-top width-fit" style="max-height:640px; min-height: 200px"></video>
 
-## Installation
+## 安装指南
 
-We provide two installation methods. Method 2 (using uv) is recommended for faster installation and better dependency management.
+我们提供两种安装方式。推荐使用方式二（uv），因为它能提供更快的安装速度和更好的依赖管理。
 
-### Method 1: Using conda
+### 方式一：使用 conda
 
-1. Create a new conda environment:
+1. 创建新的 conda 环境：
 
 ```bash
 conda create -n open_manus python=3.12
 conda activate open_manus
 ```
 
-2. Clone the repository:
+2. 克隆仓库：
 
 ```bash
 git clone https://github.com/mannaandpoem/OpenManus.git
 cd OpenManus
 ```
 
-3. Install dependencies:
+3. 安装依赖：
 
 ```bash
 pip install -r requirements.txt
 ```
+4.安装浏览器
+playwright install  
 
-### Method 2: Using uv (Recommended)
+playwright install-deps   
 
-1. Install uv (A fast Python package installer and resolver):
+### 方式二：使用 uv（推荐）
+
+1. 安装 uv（一个快速的 Python 包管理器）：
 
 ```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
-2. Clone the repository:
+2. 克隆仓库：
 
 ```bash
 git clone https://github.com/mannaandpoem/OpenManus.git
 cd OpenManus
 ```
 
-3. Create a new virtual environment and activate it:
+3. 创建并激活虚拟环境：
 
 ```bash
 uv venv
-source .venv/bin/activate  # On Unix/macOS
-# Or on Windows:
+source .venv/bin/activate  # Unix/macOS 系统
+# Windows 系统使用：
 # .venv\Scripts\activate
 ```
 
-4. Install dependencies:
+4. 安装依赖：
 
 ```bash
 uv pip install -r requirements.txt
 ```
 
-## Configuration
+## 配置说明
 
-OpenManus requires configuration for the LLM APIs it uses. Follow these steps to set up your configuration:
+OpenManus 需要配置使用的 LLM API，请按以下步骤设置：
 
-1. Create a `config.toml` file in the `config` directory (you can copy from the example):
+1. 在 `config` 目录创建 `config.toml` 文件（可从示例复制）：
 
 ```bash
 cp config/config.example.toml config/config.toml
 ```
 
-2. Edit `config/config.toml` to add your API keys and customize settings:
+2. 编辑 `config/config.toml` 添加 API 密钥和自定义设置：
 
 ```toml
-# Global LLM configuration
+# 全局 LLM 配置
 [llm]
 model = "gpt-4o"
 base_url = "https://api.openai.com/v1"
-api_key = "sk-..."  # Replace with your actual API key
+api_key = "sk-..."  # 替换为真实 API 密钥
 max_tokens = 4096
 temperature = 0.0
 
-# Optional configuration for specific LLM models
+# 可选特定 LLM 模型配置
 [llm.vision]
 model = "gpt-4o"
 base_url = "https://api.openai.com/v1"
-api_key = "sk-..."  # Replace with your actual API key
+api_key = "sk-..."  # 替换为真实 API 密钥
 ```
 
-## Quick Start
+## 快速启动
 
-One line for run OpenManus:
+一行命令运行 OpenManus：
 
 ```bash
 python main.py
 ```
 
-Then input your idea via terminal!
+然后通过终端输入你的创意！
 
-For unstable version, you also can run:
+如需体验开发中版本，可运行：
 
 ```bash
 python run_flow.py
 ```
 
-## How to contribute
+## 贡献指南
 
-We welcome any friendly suggestions and helpful contributions! Just create issues or submit pull requests.
+我们欢迎任何友好的建议和有价值的贡献！可以直接创建 issue 或提交 pull request。
 
-Or contact @mannaandpoem via 📧email: mannaandpoem@gmail.com
+或通过 📧 邮件联系 @mannaandpoem：mannaandpoem@gmail.com
 
-## Roadmap
+## 发展路线
 
-After comprehensively gathering feedback from community members, we have decided to adopt a 3-4 day iteration cycle to gradually implement the highly anticipated features.
+在全面收集了社区成员的反馈后，我们决定采用 3-4 天为周期的迭代模式，逐步实现大家期待的功能。
 
-- [ ] Enhance Planning capabilities, optimize task breakdown and execution logic
-- [ ] Introduce standardized evaluation metrics (based on GAIA and TAU-Bench) for continuous performance assessment and optimization
-- [ ] Expand model adaptation and optimize low-cost application scenarios
-- [ ] Implement containerized deployment to simplify installation and usage workflows
-- [ ] Enrich example libraries with more practical cases, including analysis of both successful and failed examples
-- [ ] Frontend/backend development to improve user experience
+- [ ] 增强 Planning 能力，优化任务分解和执行逻辑
+- [ ] 引入标准化评测，基于 GAIA 和 TAU-Bench，持续评估并优化性能
+- [ ] 拓展模型适配，优化低成本应用场景
+- [ ] 实现容器化部署，简化安装和使用流程
+- [ ] 丰富示例库，增加更多实用案例，包含成功和失败示例的分析
+- [ ] 前后端开发，提供用户体验
 
-## Community Group
-Join our discord group
-
-[![Discord Follow](https://dcbadge.vercel.app/api/server/https://discord.gg/jkT5udP9bw?style=flat)](https://discord.gg/jkT5udP9bw) &ensp;
-
-Join our networking group on Feishu and share your experience with other developers!
-
-<div align="center" style="display: flex; gap: 20px;">
-    <img src="assets/community_group.jpg" alt="OpenManus 交流群" width="300" />
-</div>
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=mannaandpoem/OpenManus&type=Date)](https://star-history.com/#mannaandpoem/OpenManus&Date)
-
-## Acknowledgement
-
-Thanks to [anthropic-computer-use](https://github.com/anthropics/anthropic-quickstarts/tree/main/computer-use-demo)
-and [browser-use](https://github.com/browser-use/browser-use) for providing basic support for this project!
-
-OpenManus is built by contributors from MetaGPT. Huge thanks to this agent community!
